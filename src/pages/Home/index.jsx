@@ -1,5 +1,5 @@
 import { Container } from './styles'
-import { Button } from '../../components/Header'
+import { Button } from '../../components/Button'
 import { FiPlus } from 'react-icons/fi'
 
 export function Home(){
