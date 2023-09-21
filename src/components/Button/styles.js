@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const Container = styled.button`
     width: 100%;
-    height: 56px;
+    height: 5.6rem;
 
     display: flex;
     align-items: center;
@@ -15,7 +15,7 @@ export const Container = styled.button`
         
     padding: 0 1.3rem;
     border: none;
-    border-radius: 10px;
+    border-radius: 1rem;
 
     &:disabled{
         opacity: 0.8;
@@ -24,7 +24,7 @@ export const Container = styled.button`
     >Icon{
         border: none;
         background: transparent;
-        font-size: 16px;
+        font-size: 1.6rem;
         color: ${({ theme }) => theme.BACKGROUND_100};
     }
 `

@@ -6,9 +6,9 @@ export function Button({ icon: Icon, title, loading = false, ...rest }){
             type='button'
             { ...rest }
             disabled={loading}
-            >
-                {Icon ? <Icon icon={toString(Icon)}/> : ''}
-                { loading ? 'carregando' : title }
+        >
+            {Icon && <Icon size={20}/>}
+            { loading ? 'carregando' : title }
         </Container>
     )
 }
