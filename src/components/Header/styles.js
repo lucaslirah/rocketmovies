@@ -21,7 +21,6 @@ export const Brand = styled.div`
 `
 export const Search = styled.div`
     width: 40%;
-    margin: 0 6rem;
 `
 export const Profile = styled.div`
     display: flex;

@@ -6,9 +6,9 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
 
-    border-radius: 1rem;
-
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+    
+    border-radius: 1rem;
     
     >input{
         height: 5.6rem;
@@ -23,9 +23,9 @@ export const Container = styled.div`
         &:placeholder{
         color: ${({ theme }) => theme.COLORS.GRAY_900};
         }
-
-        >svg{
-            margin-left: 1rem;
-        }
+    }
+    >svg{
+        color: ${({ theme }) => theme.COLORS.GRAY_900};
+        margin-left: 1.6rem;
     }
 `

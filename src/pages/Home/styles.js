@@ -13,6 +13,7 @@ export const Container = styled.div`
 
     >main{
         grid-area: content;
+        overflow-y: auto;
 
         padding: 5rem 12rem;
     }
