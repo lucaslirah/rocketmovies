@@ -1,11 +1,8 @@
-import { TitleAndRating } from '../../components/TitleAndRating'
+import { Container, Content, NoteDetails, TitleAndRating } from './styles'
 import { FiArrowLeft, FiStar, FiClock } from 'react-icons/fi'
-import { Container, Content, NoteDetails } from './styles'
 import { ButtonText } from '../../components/ButtonText'
 import { Header } from '../../components/Header'
-import { Tags } from '../../components/Tags'
-
-
+import { Tag } from '../../components/Tag'
 
 export function Details(){
     return(
@@ -15,7 +12,18 @@ export function Details(){
             <main>
                 <Content>
                     <ButtonText icon={FiArrowLeft} title="Voltar"/>
-                    <TitleAndRating title="Interstellar" icon={FiStar}/>
+
+                    <TitleAndRating>
+                        <h1>Interstellar</h1>
+
+                        <div>
+                            <FiStar/>
+                            <FiStar/>
+                            <FiStar/>
+                            <FiStar/>
+                            <FiStar/>
+                        </div>
+                    </TitleAndRating>
 
                     <NoteDetails>
                         <img src="https://github.com/lucaslirah.png" alt="Imagem do usuário" />
@@ -25,8 +33,9 @@ export function Details(){
                     </NoteDetails>
 
                     <div className='tags'>
-                        <Tags title="Ação"/>
-                        <Tags title="Drama"/>
+                        <Tag title="Ficção Científica"/>
+                        <Tag title="Drama"/>
+                        <Tag title="Família"/>
                     </div>
 
                     <p>

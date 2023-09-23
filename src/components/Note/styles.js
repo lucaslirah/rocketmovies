@@ -5,17 +5,29 @@ export const Container = styled.div`
     background-color: ${({ theme }) => theme.COLORS.PINK_DARK};
 
     padding: 32px;
+    margin-bottom: 2.4rem;
+`
+export const Rating = styled.div`
+    >svg{
+        color: ${({ theme }) => theme.COLORS.PINK};
+        fill: ${({ theme }) => theme.COLORS.PINK};
+        margin-top: 8px;
+    }
+    >svg:nth-child(5){
+        color: ${({ theme }) => theme.COLORS.PINK};
+        fill: transparent;
+    }
 `
 export const Textarea = styled.textarea`
     width: 100%;
-    height: 70px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
 
     font-family: Roboto;
     font-size: 16px;
     font-weight: 400;
     color: ${({ theme }) => theme.COLORS.GRAY_100};
-    overflow: hidden;
-    text-overflow: ellipsis;
     text-align: justify;
 
     background: transparent;

@@ -64,3 +64,22 @@ export const NoteDetails = styled.div`
         color: ${({ theme }) => theme.COLORS.PINK};
     }
 `
+export const TitleAndRating = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    
+    h1{
+        font-size: 3.6rem;
+        font-weight: 500;
+    }
+
+    svg{
+        fill: ${({ theme }) => theme.COLORS.PINK};
+        color: ${({ theme }) => theme.COLORS.PINK};
+        margin-right: 8px;
+    }
+    svg:nth-child(5){
+        fill: transparent;
+    }
+`
