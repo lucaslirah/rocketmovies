@@ -10,9 +10,11 @@ export default {
         BLACK_000: "#000000",
 
         GRAY_900: "#948F99",
-        GRAY_400: "#CAC4CF",  
-
+        GRAY_400: "#CAC4CF",
+        GRAY_100: "#999591",
+        
         PINK: "#FF859B",
+        PINK_DARK: "#FF859B0D",
 
         WHITE_800: "#F4EDE8",
         WHITE_500: "#E5E5E5",

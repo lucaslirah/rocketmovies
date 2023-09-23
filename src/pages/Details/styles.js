@@ -61,6 +61,6 @@ export const NoteDetails = styled.div`
         border: 1px solid ${({ theme }) => theme.COLORS.BACKGROUND_700};
     }
     >svg{
-        color: ${({ theme }) => theme.COLORS.PINK};;
+        color: ${({ theme }) => theme.COLORS.PINK};
     }
 `
