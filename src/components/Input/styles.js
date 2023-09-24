@@ -20,8 +20,8 @@ export const Container = styled.div`
         
         color: ${({ theme }) => theme.COLORS.WHITE_000};
 
-        &:placeholder{
-        color: ${({ theme }) => theme.COLORS.GRAY_900};
+        &::placeholder{
+            color: ${({ theme }) => theme.COLORS.GRAY_900};
         }
     }
     >svg{
