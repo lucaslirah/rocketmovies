@@ -4,6 +4,7 @@ import { Header } from '../../components/Header'
 import { ButtonText } from '../../components/ButtonText'
 import { Input } from '../../components/Input'
 import { Textarea } from '../../components/Textarea'
+import { NoteItem } from '../../components/NoteItem'
 
 export function New(){
     return(
@@ -21,7 +22,8 @@ export function New(){
                     <Input type="number" min="1" max="5" placeholder="Sua nota (de 0 a 5)"/>
                     <Textarea placeholder="Observações"/>
 
-                                        
+                    <NoteItem value="Ação" />
+                    <NoteItem placeholder="Novo marcador" isNew/>
                 </Form>
             </main>
         </Container>
