@@ -29,6 +29,21 @@ export default createGlobalStyle`
         outline: none;
     }
 
+    body::-webkit-scrollbar, main::-webkit-scrollbar {
+        width: 8px;               /* width of the entire scrollbar */
+    }
+
+    body::-webkit-scrollbar-track, main::-webkit-scrollbar-track {
+        background: transparent;        /* color of the tracking area */
+    }
+
+    body::-webkit-scrollbar-thumb, main::-webkit-scrollbar-thumb {
+        background-color: ${({ theme }) => theme.COLORS.PINK};    /* color of the scroll thumb */
+        border-radius: 8px;       /* roundness of the scroll thumb */
+        border: none;  /* creates padding around scroll thumb */
+    }
+
+
     a{
         text-decoration: none;
     }
