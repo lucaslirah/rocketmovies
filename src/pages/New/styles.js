@@ -14,6 +14,8 @@ export const Container = styled.div`
     >main{
         grid-area: content;
         overflow-y: auto;
+
+        padding: 5rem 12rem;
     }
 `
 export const Form = styled.form`
@@ -42,7 +44,7 @@ export const Form = styled.form`
     .buttons{
         display: flex;
         gap: 4rem;
-        
+
         >button:nth-child(1){
             background-color: ${({ theme }) => theme.COLORS.BACKGROUND_000};
             color: ${({ theme }) => theme.COLORS.PINK};
