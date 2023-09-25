@@ -7,6 +7,7 @@ import { Header } from '../../components/Header'
 import { Button } from '../../components/Button'
 import { Input } from '../../components/Input'
 import { FiArrowLeft } from 'react-icons/fi'
+import { Link } from 'react-router-dom'
 
 export function New(){
     return(
@@ -16,7 +17,9 @@ export function New(){
             <main>
                 <Form>
                     <header>
-                        <ButtonText title="Voltar" icon={FiArrowLeft}/>
+                        <Link to="/">
+                            <ButtonText title="Voltar" icon={FiArrowLeft}/>
+                        </Link>
                         <h1>Novo filme</h1>
                     </header>
 

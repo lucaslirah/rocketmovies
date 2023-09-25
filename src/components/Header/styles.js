@@ -5,6 +5,8 @@ export const Container = styled.div`
     width: 100%;
     padding: 0 12rem;
 
+    border-bottom: 1px solid ${({ theme }) => theme.COLORS.BACKGROUND_700};
+
     >div{
         display: flex;
         align-items: center;
@@ -14,10 +16,11 @@ export const Container = styled.div`
         margin: 2.4rem auto;
     }
 
-    border-bottom: 1px solid ${({ theme }) => theme.COLORS.BACKGROUND_700};
 `
 export const Brand = styled.div`
-    color: ${({ theme }) => theme.COLORS.PINK};
+    h1{
+        color: ${({ theme }) => theme.COLORS.PINK};
+    }
 `
 export const Search = styled.div`
     width: 40%;
@@ -27,7 +30,7 @@ export const Profile = styled.div`
     align-items: center;
     gap: 9px;
 
-    >img{
+    img{
         width: 6.4rem;
         height: 6.4rem;
 

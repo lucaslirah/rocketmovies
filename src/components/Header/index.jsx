@@ -1,4 +1,5 @@
 import { Container, Brand, Profile, Search } from './styles'
+import { Link } from 'react-router-dom'
 import { Input } from '../Input'
 
 export function Header(){
@@ -6,7 +7,9 @@ export function Header(){
         <Container>
             <div>
                 <Brand>
-                    <h1>Rocketmovies</h1>
+                    <Link to="/">
+                        <h1>Rocketmovies</h1>
+                    </Link>
                 </Brand>
                 <Search>
                     <Input placeholder="Pesquisar pelo título"/>
@@ -16,10 +19,12 @@ export function Header(){
                         <strong>Lucas Lira</strong>
                         <a href="#">Sair</a>
                     </div>
-                    <img
-                        src="http://github.com/lucaslirah.png"
-                        alt="Imagem do usuário"
-                    />
+                    <Link to="/profile">
+                        <img
+                            src="http://github.com/lucaslirah.png"
+                            alt="Imagem do usuário"
+                        />
+                    </Link>
                 </Profile>
             </div>
         </Container>
