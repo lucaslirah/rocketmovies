@@ -4,16 +4,16 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
 
-    background-color: ${({ theme, isNew }) => isNew ? "transparent" : theme.COLORS.BACKGROUND_900};
+    background-color: ${({ theme, $isNew }) => $isNew ? "transparent" : theme.COLORS.BACKGROUND_900};
 
-    border: ${({ theme, isNew }) => isNew ? `2px dashed ${theme.COLORS.BACKGROUND_900}` : "none"};
+    border: ${({ theme, $isNew }) => $isNew ? `2px dashed ${theme.COLORS.BACKGROUND_900}` : "none"};
 
     border-radius: 10px;
     padding-right: 16px;
 
     >input{
-        height: 56px;
         width: 100%;
+        height: 56px;
 
         padding: 16px;
         border: none;

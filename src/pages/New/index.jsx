@@ -1,10 +1,12 @@
-import { Container, Form } from './styles'
-import { FiArrowLeft } from 'react-icons/fi'
-import { Header } from '../../components/Header'
 import { ButtonText } from '../../components/ButtonText'
-import { Input } from '../../components/Input'
-import { Textarea } from '../../components/Textarea'
 import { NoteItem } from '../../components/NoteItem'
+import { Textarea } from '../../components/Textarea'
+import { Container, Form, Markers } from './styles'
+import { Section } from '../../components/Section'
+import { Header } from '../../components/Header'
+import { Button } from '../../components/Button'
+import { Input } from '../../components/Input'
+import { FiArrowLeft } from 'react-icons/fi'
 
 export function New(){
     return(
@@ -18,12 +20,28 @@ export function New(){
                         <h1>Novo filme</h1>
                     </header>
 
-                    <Input type="text" placeholder="Título"/>
-                    <Input type="number" min="1" max="5" placeholder="Sua nota (de 0 a 5)"/>
+                    <div className='inputs'>
+                        <Input type="text" placeholder="Título"/>
+                        <Input type="number" min="1" max="5" placeholder="Sua nota (de 0 a 5)"/>
+                    </div>
+
                     <Textarea placeholder="Observações"/>
 
-                    <NoteItem value="Ação" />
-                    <NoteItem placeholder="Novo marcador" isNew/>
+                    <Section title="Marcadores">
+                        <Markers>
+                            <li>
+                                <NoteItem value="Ação" />
+                            </li>
+                            <li>
+                                <NoteItem placeholder="Novo marcador" $isNew/>
+                            </li>
+                        </Markers>
+                    </Section>
+
+                    <div className='buttons'>
+                        <Button title="Excluir nota"/>
+                        <Button title="Salvar alterações"/>
+                    </div>
                 </Form>
             </main>
         </Container>
